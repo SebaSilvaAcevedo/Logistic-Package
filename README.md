@@ -1,3 +1,3 @@
-# Test-logistic-package
+# Test-logistic-package-SS
 
-Updated from intellij from branch dev again
+Microservice logistic-package created for practice in TechAcademy
