@@ -1,0 +1,29 @@
+server:
+  error:
+    include-message: always
+  port: 8080
+
+spring:
+  application:
+    name: PKG
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    password: ${DB_PASSWORD}
+    url: jdbc:postgresql://${DB_HOST}/${DB_NAME}
+    username: ${DB_USER}
+  jpa:
+    database: postgresql
+    generate-ddl: true
+    hibernate:
+      ddl-auto: ${DLL_AUTO:update}
+    show-sql: ${JPA_SHOW_SQL:false}
+
+logging:
+  level:
+    com:
+      techacademy: INFO
+    org:
+      hibernate: OFF
+      springframework: INFO
+  #pattern:
+   # console: '%d %-5level %logger : %msg%n'
